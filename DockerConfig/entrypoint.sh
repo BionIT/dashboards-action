@@ -2,6 +2,7 @@
 
 set -e
 
+echo ${SOME_OTHER}
 echo ${KUBE_CONFIG_DATA} | base64 -d > kubeconfig
 export KUBECONFIG="${PWD}/kubeconfig"
 chmod 600 ${PWD}/kubeconfig
